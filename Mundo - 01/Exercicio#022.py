@@ -1,0 +1,8 @@
+name = input('Qual o seu nome inteiro? ').title()
+nameL = name.split()
+print('-' * 27)
+print('Seu nome em maísculo é: {}.'.format(name.upper()))
+print('Seu nome em minúsculo é: {}.'.format(name.lower()))
+print('Seu nome tem {} letras (sem espaços).'.format(len(name) - name.count(' ')))
+print('Seu primeiro nome é {} e tem {} letras.'.format(nameL[0], len(nameL[0])))
+print('-' * 27)
