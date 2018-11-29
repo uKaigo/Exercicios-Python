@@ -1,1 +1,2 @@
-# Exercicios
+> # Exercicios de Python³
+
