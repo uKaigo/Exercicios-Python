@@ -1,3 +1,2 @@
-# Exercicios de Python³
-Exercicios separados em mundos, cada um com mais de 30 exercicios, de acordo com o tema das aulas
-> By Kaigo
+# Curso de Python
+Exercícios feitos por mim do curso de Python do [Gustavo Guanabara](https://www.youtube.com/user/cursosemvideo)
