@@ -1,6 +1,5 @@
 from time import sleep
 
-
 def escreva(cor, texto):
     tam = len(texto)+4
     print(f'\033[{cor+10}m', end='')
