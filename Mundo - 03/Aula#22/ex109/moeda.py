@@ -1,5 +1,5 @@
 def metade(coin, frmt):
-    if format:
+    if frmt:
         return moeda(coin/2)
     return coin/2
 
