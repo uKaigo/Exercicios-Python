@@ -37,4 +37,4 @@ def resumo(coin, add, sub):
     rdco = f'{sub}% de redução:'
     print(f'{rdco:<15}', end='')
     print(f'{diminuir(coin, sub, True):>15}')
-    print('-'*30)
+    print('-'*30) 
