@@ -30,4 +30,4 @@ try:
             break
 except Exception as e:
     print(f'Algum erro ocorreu [{type(e).__name__}]: {e}')
-    utils.printHeader("Saindo do sistema... Até logo!")
+    utils.printHeader("Saindo do sistema... Até logo!") 
