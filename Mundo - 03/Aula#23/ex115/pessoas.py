@@ -1,5 +1,5 @@
 import json
-import os
+import os 
 def cadastrar(name, yearso: int):
     if not os.path.exists("ex115/pessoas.json"):
         with open("ex115/pessoas.json", "w") as ps:
