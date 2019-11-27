@@ -2,7 +2,7 @@ from ex115 import utils, pessoas
 import os
  
 if not os.path.exists("ex115/pessoas.json"):
-    with open("ex115/pessoas.json", "w") as ps:
+    with open("ex115/pessoas.json", "w") as ps: 
         ps.write("[\n\n]")
 
 try: 
