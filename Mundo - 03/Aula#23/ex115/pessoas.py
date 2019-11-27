@@ -1,5 +1,9 @@
 import json
+import os
 def cadastrar(name, yearso: int):
+    if not os.path.exists("ex115/pessoas.json"):
+        with open("ex115/pessoas.json", "w") as ps:
+            ps.write("[\n\n]")
     with open("ex115/pessoas.json") as ps:
         pessoas = json.loads(ps.read())
     with open("ex115/pessoas.json", "w") as ps:
@@ -10,5 +14,8 @@ def cadastrar(name, yearso: int):
     return pessoas[-1]
 
 def get():
+    if not os.path.exists("ex115/pessoas.json"):
+        with open("ex115/pessoas.json", "w") as ps:
+            ps.write("[\n\n]")
     with open("ex115/pessoas.json") as ps:
         return json.loads(ps.read())

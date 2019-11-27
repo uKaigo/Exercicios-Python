@@ -7,7 +7,7 @@ def leiaIdade(prompt='Digite um número inteiro: '): # Leia Int
             if num < 0:
                 raise ValueError
         except (ValueError, NameError): #NameError pq quando digitava letra dava isso
-            print('\033[31mERRO: por favor, digite um número inteiro válido.\033[m')
+            print('\033[31mERRO: Por favor, digite um número inteiro válido.\033[m')
         except KeyboardInterrupt:
             print('\n\033[31mUsuário preferiu cancelar.\033[m')
             break
@@ -16,11 +16,19 @@ def leiaIdade(prompt='Digite um número inteiro: '): # Leia Int
     return num
 
 def leiaNome(prompt='Digite um texto: '):
-    try:
-        nome = input(prompt)
-    except KeyboardInterrupt:
-        print('\n\033[31mUsuário preferiu cancelar.\033[m')
-        nome = -1
+    nome = -1
+    while True:
+        try:
+            nome = input(prompt)
+            if not len(nome) > 1:
+                raise NameError
+        except NameError:
+            print('\n\033[31mERRO: Por favor, digite um número inteiro válido.\033[m')
+        except KeyboardInterrupt:
+            print('\n\033[31mUsuário preferiu cancelar.\033[m')
+            break
+        else:
+            break
     return nome
 
 def printHeader(text="MENU"):
@@ -40,7 +48,7 @@ def printMenu():
             if op not in range(1, 4):
                 raise ValueError
         except (ValueError, NameError):
-            print('\033[31mERRO! Digite uma opção válida!')
+            print('\033[31mERRO! Digite uma opção válida!\033[m')
         except KeyboardInterrupt:
             print('')
             return 3
