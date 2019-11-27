@@ -1,4 +1,3 @@
-from os import system
 def leiaIdade(prompt='Digite um número inteiro: '): # Leia Int
     num = -1
     while True:
