@@ -19,10 +19,10 @@ def leiaNome(prompt='Digite um texto: '):
     while True:
         try:
             nome = input(prompt)
-            if not len(nome) > 1:
+            if not len(nome) > 1 or int(nome):
                 raise NameError
         except NameError:
-            print('\n\033[31mERRO: Por favor, digite um número inteiro válido.\033[m')
+            print('\n\033[31mERRO: Por favor, digite um nome válido.\033[m')
         except KeyboardInterrupt:
             print('\n\033[31mUsuário preferiu cancelar.\033[m')
             break
