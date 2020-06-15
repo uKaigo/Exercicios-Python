@@ -22,3 +22,4 @@ while True:
     print('\033[41m', end='')
     help(func)
     sleep(1)
+ 
