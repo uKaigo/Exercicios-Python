@@ -6,4 +6,3 @@ Aqui você irá encontrar exercícios do
 * [Mundo 3: Estruturas Compostas](https://www.youtube.com/playlist?list=PLHz_AreHm4dksnH2jVTIVNviIMBVYyFnH) ([_vizualizar_](https://github.com/Kaigo11k/Exercicios-Python/tree/master/Mundo%20-%2003))
  
 ##### Os exercícios já estão corrigidos, esqueci de corrigir em arquivos separados.
-OBS: A contagem entre o mundo 2 e o 3 está errada, percebi quando acabei o 3.
